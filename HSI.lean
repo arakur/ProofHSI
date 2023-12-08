@@ -122,12 +122,12 @@ section Definitions
 
     /-! 式を評価する． -/
     @[simp]
-    def eval (a: Assign) : HSExpr → ℕ
+    def eval (σ: Assign) : HSExpr → ℕ
       | One => 1
-      | A + B => A.eval a + B.eval a
-      | A * B => A.eval a * B.eval a
-      | Power A B => A.eval a ^ B.eval a
-      | Var name => a name
+      | A + B => A.eval σ + B.eval σ
+      | A * B => A.eval σ * B.eval σ
+      | Power A B => A.eval σ ^ B.eval σ
+      | Var name => σ name
 
     notation "⟦" A ";" σ "⟧" => HSExpr.eval σ A
 
