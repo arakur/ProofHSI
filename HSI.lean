@@ -575,3 +575,10 @@ section MainProof
     contradiction
 
 end MainProof
+
+/-!
+# 参考文献
+
+- Joseph Tassarotti. Tarski's High School Algebra Problem. http://www.cs.bc.edu/~tassarot/2011/12/30/Tarski.html
+- Stanley Burris, Karen Yeats. The Saga of the High School Identities.
+-/
